@@ -36,7 +36,7 @@
             btnSalvar = new ReaLTaiizor.Controls.MaterialButton();
             btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
             txtSenha = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            materialComboBox1 = new ReaLTaiizor.Controls.MaterialComboBox();
+            cboEstado = new ReaLTaiizor.Controls.MaterialComboBox();
             txtCidade = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             txtBairro = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             txtEndereco = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
@@ -74,7 +74,7 @@
             tabPage1.Controls.Add(btnSalvar);
             tabPage1.Controls.Add(btnCancelar);
             tabPage1.Controls.Add(txtSenha);
-            tabPage1.Controls.Add(materialComboBox1);
+            tabPage1.Controls.Add(cboEstado);
             tabPage1.Controls.Add(txtCidade);
             tabPage1.Controls.Add(txtBairro);
             tabPage1.Controls.Add(txtEndereco);
@@ -105,7 +105,7 @@
             txtDataNasc.Hint = "Data de Nascimento";
             txtDataNasc.InsertKeyMode = InsertKeyMode.Default;
             txtDataNasc.LeadingIcon = null;
-            txtDataNasc.Location = new Point(422, 38);
+            txtDataNasc.Location = new Point(492, 38);
             txtDataNasc.Mask = "99/99/9999";
             txtDataNasc.MaxLength = 32767;
             txtDataNasc.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -122,7 +122,7 @@
             txtDataNasc.SelectionLength = 0;
             txtDataNasc.SelectionStart = 0;
             txtDataNasc.ShortcutsEnabled = true;
-            txtDataNasc.Size = new Size(312, 48);
+            txtDataNasc.Size = new Size(242, 48);
             txtDataNasc.SkipLiterals = true;
             txtDataNasc.TabIndex = 10;
             txtDataNasc.TabStop = false;
@@ -204,28 +204,28 @@
             txtSenha.TrailingIcon = null;
             txtSenha.UseSystemPasswordChar = true;
             // 
-            // materialComboBox1
+            // cboEstado
             // 
-            materialComboBox1.AutoResize = false;
-            materialComboBox1.BackColor = Color.FromArgb(255, 255, 255);
-            materialComboBox1.Depth = 0;
-            materialComboBox1.DrawMode = DrawMode.OwnerDrawVariable;
-            materialComboBox1.DropDownHeight = 174;
-            materialComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            materialComboBox1.DropDownWidth = 121;
-            materialComboBox1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
-            materialComboBox1.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            materialComboBox1.FormattingEnabled = true;
-            materialComboBox1.IntegralHeight = false;
-            materialComboBox1.ItemHeight = 43;
-            materialComboBox1.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
-            materialComboBox1.Location = new Point(583, 326);
-            materialComboBox1.MaxDropDownItems = 4;
-            materialComboBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            materialComboBox1.Name = "materialComboBox1";
-            materialComboBox1.Size = new Size(151, 49);
-            materialComboBox1.StartIndex = 0;
-            materialComboBox1.TabIndex = 6;
+            cboEstado.AutoResize = false;
+            cboEstado.BackColor = Color.FromArgb(255, 255, 255);
+            cboEstado.Depth = 0;
+            cboEstado.DrawMode = DrawMode.OwnerDrawVariable;
+            cboEstado.DropDownHeight = 174;
+            cboEstado.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboEstado.DropDownWidth = 121;
+            cboEstado.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cboEstado.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            cboEstado.FormattingEnabled = true;
+            cboEstado.IntegralHeight = false;
+            cboEstado.ItemHeight = 43;
+            cboEstado.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
+            cboEstado.Location = new Point(583, 326);
+            cboEstado.MaxDropDownItems = 4;
+            cboEstado.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            cboEstado.Name = "cboEstado";
+            cboEstado.Size = new Size(151, 49);
+            cboEstado.StartIndex = 0;
+            cboEstado.TabIndex = 6;
             // 
             // txtCidade
             // 
@@ -375,7 +375,7 @@
             txtMatricula.SelectionLength = 0;
             txtMatricula.SelectionStart = 0;
             txtMatricula.ShortcutsEnabled = true;
-            txtMatricula.Size = new Size(377, 48);
+            txtMatricula.Size = new Size(460, 48);
             txtMatricula.TabIndex = 0;
             txtMatricula.TabStop = false;
             txtMatricula.TextAlign = HorizontalAlignment.Left;
@@ -505,7 +505,7 @@
         private ReaLTaiizor.Controls.MaterialButton btnSalvar;
         private ReaLTaiizor.Controls.MaterialButton btnCancelar;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtSenha;
-        private ReaLTaiizor.Controls.MaterialComboBox materialComboBox1;
+        private ReaLTaiizor.Controls.MaterialComboBox cboEstado;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtCidade;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtBairro;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtEndereco;
