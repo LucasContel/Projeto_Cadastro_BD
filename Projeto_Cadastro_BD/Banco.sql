@@ -14,3 +14,13 @@ create table aluno(
 	senha			varchar(20) not null,
 	primary key (id)
 );
+
+create table curso(
+	id				int not null auto_increment,
+    codigo			int not null,
+    nivel			varchar(30) not null,
+    duracao			int not null,
+    periodo			varchar(30) not null,
+    area			varchar(30) not null,
+    primary key (id)
+);
