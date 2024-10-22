@@ -17,6 +17,7 @@ create table aluno(
 
 create table curso(
 	id				int not null auto_increment,
+	nome			varchar(80),
     codigo			int not null,
     nivel			varchar(30) not null,
     duracao			int not null,
